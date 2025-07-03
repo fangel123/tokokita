@@ -1,0 +1,12 @@
+# Abaikan folder node_modules di semua sub-folder
+**/node_modules
+
+# Abaikan file .env di semua sub-folder
+**/.env
+
+# Abaikan build output dari frontend
+client/dist
+
+# Abaikan file sistem operasi
+.DS_Store
+Thumbs.db
