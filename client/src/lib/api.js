@@ -1,8 +1,10 @@
 import axios from "axios";
 
+const API_BASE_URL = "https://tokokita-production.up.railway.app/api";
+
 // Buat instance Axios dengan konfigurasi dasar
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "http://localhost:5001/api",
+  baseURL: API_BASE_URL, // Gunakan URL yang sudah kita definisikan
   headers: {
     "Content-Type": "application/json",
   },
