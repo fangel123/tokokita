@@ -17,7 +17,10 @@ const PORT = process.env.PORT || 5001;
 
 // Konfigurasi CORS
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: [
+    "http://localhost:5173", // Untuk development di lokal
+    "https://tokokita-hazel.vercel.app", // URL frontend produksi Anda
+  ],
   optionsSuccessStatus: 200,
 };
 
